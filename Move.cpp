@@ -19,4 +19,9 @@ string Move::getName(){
 
 }
 
+vector<string> Move::getCounterName(){
+
+    return this->counterMove;
+}
+
 #endif

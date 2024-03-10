@@ -15,8 +15,7 @@ class Player{
         Player(string name);
         virtual Move* makeMove();  // return type is changed, the return type of this is a hint to the polymorphism
         string getName();
-
-        
+     
 };
 
 #endif

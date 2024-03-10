@@ -10,7 +10,9 @@ using namespace std;
 
 Move* Computer::makeMove(){
 
-    return nullptr;
+    Move* rockMove = new Rock();
+    return rockMove;
+
 }
 
 #endif

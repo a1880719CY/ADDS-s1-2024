@@ -13,6 +13,7 @@ class Move{
         Move(){};
         Move(string name, vector<string> counterMove);
         string getName();
+        vector<string> getCounterName();
         
 };
 
