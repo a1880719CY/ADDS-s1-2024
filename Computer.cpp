@@ -1,15 +1,15 @@
 
 
 #include "Computer.h"
-#include "Rock.h"
+#include "Ninja.h"
 #include <iostream>
 
 using namespace std;
 
 Move* Computer::makeMove(){
 
-    Move* rockMove = new Rock();
-    return rockMove;
+    Move* NinjaMove = new Ninja();
+    return NinjaMove;
 
 }
 

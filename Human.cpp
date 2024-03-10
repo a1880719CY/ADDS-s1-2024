@@ -62,6 +62,7 @@ Move* Human::makeMove()
         return rockMove; 
 
     } 
+    cout << "pass" << " ";
     return nullptr;
     
 }

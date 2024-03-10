@@ -7,10 +7,10 @@
 
 using namespace std;
 
-Move::Move(string name, vector<string> counterMove){
+Move::Move(string name, vector<string> newCounterMove){
 
     this-> name = name;
-    this->counterMove = counterMove;
+    this->counterMove = newCounterMove;
 
 }
 
