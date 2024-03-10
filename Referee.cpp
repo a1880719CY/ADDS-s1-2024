@@ -15,15 +15,19 @@ Player* Referee::refGame(Player* player1, Player* player2){
 	vector<string>p1 = p1Res->getCounterName();
     vector<string>p2 = p2Res->getCounterName();
 
-    if (p1Res->getName() == p2[0] || p1Res->getName() == p2[1]){
-
-        return player2;
-
-    } else if (p2Res->getName() == p1[0] || p2Res->getName() == p1[1]){
+    int p1Win = count(p1.begin(), p1.end(), p2Res->getName()); 
+    int p2Win = count(p2.begin(), p2.end(), p1Res->getName()); 
+	if (p1Win > 0) {  
 
         return player1;
 
+    } 
+    else if (p2Win > 0){ 
+
+        return player2;
+        
     }
+
 
 return nullptr;
 
