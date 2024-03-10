@@ -1,3 +1,6 @@
+#ifndef NINJA_FILE
+#define NINJA_FILE
+
 #include "Move.h"
 #include <iostream>
 #include <string>
@@ -8,3 +11,5 @@ class Ninja : public Move{
     public:
         Ninja();    
 };
+
+#endif

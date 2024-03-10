@@ -1,5 +1,7 @@
+
+#ifndef COMPUTER_FILE
+#define COMPUTER_FILE
 #include "Player.h"
-#include "Move.h"
 #include <iostream>
 #include <string>
 
@@ -11,3 +13,5 @@ class Computer: public Player{
         Move * makeMove();
         
 };
+
+#endif

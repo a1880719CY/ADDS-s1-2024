@@ -1,8 +1,6 @@
-#ifndef COMPUTER_FILE
-#define COMPUTER_FILE
+
 
 #include "Computer.h"
-#include "Move.h"
 #include "Rock.h"
 #include <iostream>
 
@@ -15,4 +13,3 @@ Move* Computer::makeMove(){
 
 }
 
-#endif

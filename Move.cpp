@@ -1,7 +1,8 @@
-#ifndef MOVE_FILE
-#define MOVE_FILE
+
 
 #include "Move.h"
+#include <vector>
+#include <string>
 #include <iostream>
 
 using namespace std;
@@ -23,5 +24,3 @@ vector<string> Move::getCounterName(){
 
     return this->counterMove;
 }
-
-#endif

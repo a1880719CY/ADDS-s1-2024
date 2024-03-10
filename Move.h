@@ -1,4 +1,6 @@
-#include "Player.h"
+#ifndef MOVE_FILE
+#define MOVE_FILE
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -17,3 +19,4 @@ class Move{
         
 };
 
+#endif

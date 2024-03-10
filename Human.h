@@ -1,5 +1,7 @@
+#ifndef HUMAN_FILE
+#define HUMAN_FILE
+
 #include "Player.h"
-#include "Move.h"
 #include <iostream>
 #include <string>
 
@@ -12,3 +14,5 @@ class Human : public Player{
         Move* makeMove();
         
 };
+
+#endif

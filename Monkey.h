@@ -1,3 +1,6 @@
+#ifndef MONKEY_FILE
+#define MONKEY_FILE
+
 #include "Move.h"
 #include <iostream>
 #include <string>
@@ -9,3 +12,5 @@ class Monkey : public Move{
         Monkey();
         
 };
+
+#endif

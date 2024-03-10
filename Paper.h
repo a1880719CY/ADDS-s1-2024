@@ -1,3 +1,6 @@
+#ifndef PAPER_FILE
+#define PAPER_FILE
+
 #include "Move.h"
 #include <iostream>
 #include <string>
@@ -8,3 +11,5 @@ class Paper : public Move{
     public:
         Paper();    
 };
+
+#endif

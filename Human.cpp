@@ -1,9 +1,5 @@
-#ifndef HUMAN_FILE
-#define HUMAN_FILE
 
 #include "Human.h"
-#include "Player.h"
-#include "Move.h"
 #include "Paper.h"
 #include "Scissors.h"
 #include "Rock.h"
@@ -69,5 +65,3 @@ Move* Human::makeMove()
     return nullptr;
     
 }
-
-#endif

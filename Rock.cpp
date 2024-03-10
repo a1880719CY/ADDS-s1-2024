@@ -1,7 +1,5 @@
-#ifndef ROCK_FILE
-#define ROCK_FILE
 
-#include "Move.h"
+
 #include "Rock.h"
 #include <vector>
 #include <string>
@@ -11,4 +9,3 @@ using namespace std;
 
 Rock::Rock() : Move("Rock", vector<string> { "Scissors"}){};
 
-#endif
