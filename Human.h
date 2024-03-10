@@ -1,4 +1,5 @@
 #include "Player.h"
+#include "Move.h"
 #include <iostream>
 #include <string>
 
@@ -8,6 +9,6 @@ class Human : public Player{
     public:
         Human();
         Human(std::string humanName);
-        char makeMove();
+        Move * makeMove();
         
 };

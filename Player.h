@@ -1,6 +1,7 @@
 #ifndef PLAYER_FILE
 #define PLAYER_FILE
 
+#include "Move.h"
 #include <iostream>
 #include <string>
 
@@ -12,7 +13,7 @@ class Player{
     public:
         Player(){};
         Player(string name);
-        virtual char makeMove();
+        virtual Move * makeMove();  // return type is changed, the return type of this is a hint to the polymorphism
         string getName();
 
         

@@ -1,13 +1,14 @@
 #include "Referee.h"
 #include "Player.h"
+#include "Move.h"
 #include <iostream>
 
 using namespace std;
 
 Player* Referee::refGame(Player* player1, Player* player2){
     
-    char p1Res = player1->makeMove();
-    char p2Res = player2->makeMove();
+    Move p1Res = player1->makeMove();
+    Move p2Res = player2->makeMove();
 
     if (p1Res == p2Res) {
 
