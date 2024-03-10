@@ -1,14 +1,14 @@
-#ifndef MONKEY_FILE
-#define MONKEY_FILE
+#ifndef PAPER_FILE
+#define PAPER_FILE
 
 #include "Move.h"
-#include "Monkey.h"
+#include "Paper.h"
 #include <vector>
 #include <string>
 #include <iostream>
 
 using namespace std;
 
-Monkey::Monkey() : Move("Monkey", vector<string> { "Ninja", "Robot"}){};
+Paper::Paper() : Move("Paper", vector<string> { "Rock"}){};
 
 #endif

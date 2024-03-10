@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class Ninja : public Move{
+class Zombie : public Move{
     public:
-        Ninja();    
+        Zombie();    
 };

@@ -9,6 +9,6 @@ class Human : public Player{
     public:
         Human();
         Human(std::string humanName);
-        Move * makeMove();
+        Move* makeMove();
         
 };

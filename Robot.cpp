@@ -1,14 +1,14 @@
-#ifndef MONKEY_FILE
-#define MONKEY_FILE
+#ifndef ROBOT_FILE
+#define ROBOT_FILE
 
 #include "Move.h"
-#include "Monkey.h"
+#include "Robot.h"
 #include <vector>
 #include <string>
 #include <iostream>
 
 using namespace std;
 
-Monkey::Monkey() : Move("Monkey", vector<string> { "Ninja", "Robot"}){};
+Robot::Robot() : Move("Robot", vector<string> { "Zombie", "Ninja"}){};
 
 #endif

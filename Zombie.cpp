@@ -1,14 +1,14 @@
-#ifndef MONKEY_FILE
-#define MONKEY_FILE
+#ifndef ZOMBIE_FILE
+#define ZOMBIE_FILE
 
 #include "Move.h"
-#include "Monkey.h"
+#include "Zombie.h"
 #include <vector>
 #include <string>
 #include <iostream>
 
 using namespace std;
 
-Monkey::Monkey() : Move("Monkey", vector<string> { "Ninja", "Robot"}){};
+Zombie::Zombie() : Move("Zombie", vector<string> { "Pirate", "Monkey"}){};
 
 #endif
