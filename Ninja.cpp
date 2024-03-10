@@ -1,0 +1,14 @@
+#ifndef NINJA_FILE
+#define NINJA_FILE
+
+#include "Move.h"
+#include "Ninja.h"
+#include <vector>
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+Ninja::Ninja() : Move("Ninja", vector<string> { "Zombie", "Pirate"}){};
+
+#endif

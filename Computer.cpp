@@ -10,7 +10,7 @@ using namespace std;
 
 Move* Computer::makeMove(){
 
-    return 'R';
+    return nullptr;
 }
 
 #endif

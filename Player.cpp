@@ -10,7 +10,7 @@ Player::Player(string name){
 
 };
 
-char Player::makeMove(){
+Move* Player::makeMove(){
 
     return 0;
 
