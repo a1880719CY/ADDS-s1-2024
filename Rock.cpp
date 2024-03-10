@@ -7,5 +7,5 @@
 
 using namespace std;
 
-Rock::Rock() : Move("Rock", vector<string> {"Scissors"}){};
+Rock::Rock() : Move( "Rock", vector<string> {"Scissors"}){};
 
