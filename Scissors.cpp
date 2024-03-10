@@ -7,5 +7,5 @@
 
 using namespace std;
 
-Scissors::Scissors() : Move("Scissors", vector<string> { "Ninja", "Robot"}){};
+Scissors::Scissors() : Move("Scissors", vector<string> { "Paper"}){};
 

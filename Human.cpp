@@ -19,7 +19,7 @@ Human::Human(string name) : Player (name) {};
 Move* Human::makeMove()
 {
     string result;
-    cout << "Enter move:" << endl;
+    cout << "Enter move:" ;
     cin >> result;
     if (result == "Rock"){
 

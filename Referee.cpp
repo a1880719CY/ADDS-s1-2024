@@ -21,7 +21,7 @@ Player* Referee::refGame(Player* player1, Player* player2){
 
     } else if (p2Res->getName() == p1[0] || p2Res->getName() == p1[1]){
 
-        return player2;
+        return player1;
 
     }
 
