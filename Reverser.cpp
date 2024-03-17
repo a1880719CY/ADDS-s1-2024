@@ -4,24 +4,15 @@
 using namespace std;
 
 int Reverser::reverseDigit(int value){
-    static int newNum = 0;
-    if(value < 0){
-
+    if (value < 0)
         return -1;
 
-    }
-    if (value ==0){
-        
-        return newNum;
-    } else {
-        
-        int integerNeeded = value%10;
-        newNum = newNum * 10;
-        newNum = newNum + integerNeeded;
-        value = value - integerNeeded;
-        return reverseDigit(value/10);
+    if (value == 0)
+        return 0;
 
-    }
+    int lastDigit = value % 10;
+
+    return reverseDigit(value / 10) * 10 + lastDigit;
 
 }
 string Reverser::reverseString(string characters){
