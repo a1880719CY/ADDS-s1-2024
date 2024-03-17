@@ -4,7 +4,6 @@
 using namespace std;
 
 int Reverser::reverseDigit(int value){
-    static int newNum = 0;
     if(value < 0){
 
         return -1;
@@ -12,7 +11,10 @@ int Reverser::reverseDigit(int value){
     }
     if (value == 0){
         
-        return newNum;
+        int result = newNum;
+        this->newNum = 0;
+        return result;
+        
     } else {
         
         int integerNeeded = value%10;

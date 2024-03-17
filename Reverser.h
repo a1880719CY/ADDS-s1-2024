@@ -5,6 +5,8 @@
 
 using namespace std;
 class Reverser {
+    private:
+        int newNum = 0;
     public:
         int reverseDigit(int value);
         string reverseString(string characters);
