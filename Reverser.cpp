@@ -5,7 +5,7 @@ using namespace std;
 
 int Reverser::reverseDigit(int value){
     static int newNum = 0;
-    if(value <0){
+    if(value < 0){
 
         return -1;
 
@@ -15,8 +15,10 @@ int Reverser::reverseDigit(int value){
         return newNum;
     } else {
         
+        int integerNeeded = value%10;
         newNum = newNum * 10;
-        newNum = newNum + (value%10);
+        newNum = newNum + integerNeeded;
+        value = value - integerNeeded;
         return reverseDigit(value/10);
 
     }
