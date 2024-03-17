@@ -1,1 +1,0 @@
-g++ Computer.cpp Human.cpp Referee.cpp Player.cpp Computer.h Human.h Referee.h Player.h Monkey.cpp Monkey.h Move.cpp Move.h Rock.h Rock.cpp Paper.h Paper.cpp Scissors.cpp Scissors.h Ninja.h Ninja.cpp Pirate.h Pirate.cpp Robot.cpp Robot.h Zombie.h Zombie.cpp main.cpp -o test
