@@ -14,10 +14,8 @@ vector<int> Finder::findSubstrings(string s1, string s2) {
     int basePower = 1;
 
     // Calculate the hash of s2 and the initial hash of the first substring of s1
-    for (char c : s2) {
-        s2Hash = (s2Hash * base + c) % mod;
-    }
     for (size_t i = 0; i < s2.size(); i++) {
+        s2Hash = (s2Hash * base + s2[i]) % mod;
         s1Hash = (s1Hash * base + s1[i]) % mod;
         if (i != 0) {
             basePower = (basePower * base) % mod;
@@ -55,3 +53,4 @@ vector<int> Finder::findSubstrings(string s1, string s2) {
 
     return result;
 }
+
