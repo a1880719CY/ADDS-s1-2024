@@ -1,4 +1,5 @@
 #include "Finder.h"
+#include <stdbool.h>
 
 using namespace std;
 
@@ -6,13 +7,19 @@ vector<int> Finder::findSubstrings(string s1, string s2) {
 
     vector<int> result;
 
-    for(size_t i = 1; i <= s2.size(); i++) {
-        size_t found = s1.find(s2.substr(0, i));
-        if (found != string::npos) {
-            result.push_back(found);
-        } else {
-            result.push_back(-1);
+    for(int i = 0; i < s1.size(); i++) {
+        bool matchFlag = true;
+        for(int k = 0; k < s2.size(); k++){
+            if(s1.at(i+k) != s2.at(k)){
+                matchFlag = false;
+            }  
+        }
+
+        if(matchFlag){
+            result.push_back(i);
+            return result;
         }
     }
+    result.push_back(-1);
     return result;
 }
