@@ -7,9 +7,9 @@ vector<int> Finder::findSubstrings(string s1, string s2) {
 
     vector<int> result;
 
-    for(int i = 0; i < s1.size(); i++) {
+    for(int i = 0; i <= s1.size(); i++) {
         bool matchFlag = true;
-        for(int k = 0; k < s2.size(); k++){
+        for(int k = 0; k <= s2.size(); k++){
             if(s1.at(i+k) != s2.at(k)){
                 matchFlag = false;
             }  
