@@ -6,27 +6,17 @@
 #include "RecursiveBinarySearch.h"
 
 int main() {
-    // Input list of integers
-    std::vector<int> inputList;
-    int num;
-    while (std::cin >> num) {
-        inputList.push_back(num);
+    std::vector<int> a = {6, 4, 5, 6};
+    std::vector<int> b = {1, 2, 4, 7};
+
+    a.insert(a.end(), b.begin(), b.end());
+
+    BubbleSort bubbleSort;
+    std::vector<int> c = bubbleSort.sort(a);
+
+    for(std::vector<int>::size_type i = 0; i < c.size(); i++) {
+        std::cout << c.at(i) << ' ';
     }
-
-    // Instantiate QuickSort to sort the list
-    QuickSort quickSort;
-    std::vector<int> sortedList = quickSort.sort(inputList);
-
-    // Instantiate RecursiveBinarySearch to search for 1
-    RecursiveBinarySearch binarySearch;
-    bool found = binarySearch.search(sortedList, 1);
-
-    // Output result followed by the sorted list
-    std::cout << (found ? "true" : "false") << " ";
-    for (int num : sortedList) {
-        std::cout << num << " ";
-    }
-    std::cout << std::endl;
 
     return 0;
 }
