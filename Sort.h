@@ -8,7 +8,7 @@ using namespace std;
 
 class Sort{
     public:
-        virtual vector<int> sort(vector<int> list){};
+        virtual vector<int> sort(vector<int> list){return list;};
 };
 
 

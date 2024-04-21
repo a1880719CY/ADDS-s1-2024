@@ -9,7 +9,7 @@ std::vector<int> QuickSort::sort(std::vector<int> list){
 
 }
 
-int partition(std::vector<int>& list, int low, int high) {
+int QuickSort::partition(std::vector<int>& list, int low, int high) {
     int pivot = list[low];
     int i = low + 1; // Start from the element after the pivot
     for (int j = low + 1; j <= high; ++j) {
@@ -22,7 +22,7 @@ int partition(std::vector<int>& list, int low, int high) {
     return i - 1;
 }
 
-void quicksort(std::vector<int>& list, int low, int high) {
+void QuickSort::quicksort(std::vector<int>& list, int low, int high) {
     if (low < high) {
         if (high - low + 1 >= 3) {
             int third = low + 2; // Index of the third element
