@@ -1,2 +1,2 @@
 # ADDS-s1-2024
-WOrks for ADDS lesson
+This repository contains the work I completed for my university course in ADDS
